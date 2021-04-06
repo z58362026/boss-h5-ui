@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+        "target": "esnext",
+        "module": "esnext",
+        // this enables stricter inference for data properties on `this`
+        "strict": true,
+        "jsx": "preserve",
+        "declaration": true, // 生命文件
+        "moduleResolution": "node"
+    },
+    "include": [
+        "src/**/*.ts",
+        "src/**/*.vue",
+        "packages/**/*.ts",
+        "packages/**/*.vue",
+        "packages/index.js"
+    ],
+    "exclude": ["node_modules", "stories"],
+    "files": ["typings/common.d.ts"]
+}
